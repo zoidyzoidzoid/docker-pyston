@@ -29,8 +29,4 @@ To run the Pyston shell:
 docker run -it --rm zoidbergwill/pyston:0.4
 ```
 
-Older Pyston builds might eventually be available on the following branches
-
-* [0.3](https://github.com/zoidbergwill/docker-pyston/tree/0.3)
-
 Trusted builds are available on the [Docker Hub Registry](https://registry.hub.docker.com/u/zoidbergwill/pyston/).
