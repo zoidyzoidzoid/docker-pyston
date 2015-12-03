@@ -1,6 +1,6 @@
-# Dockerfile for PyPy
+# Dockerfile for Pyston
 FROM ubuntu:14.04
-MAINTAINER William Stewart <zoidbergwill@gmail.com)
+MAINTAINER William Stewart <zoidbergwill@gmail.com>
 
 ENV LANG=C.UTF-8 DEBIAN_FRONTEND=noninteractive
 
