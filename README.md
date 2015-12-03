@@ -8,7 +8,6 @@ Based on [docker-pypy](https://github.com/zoidbergwill/docker-pyston)
 A minimal Ubuntu 14.04 based Docker image for Pyston 0.4. There are plans for an `onbuild` variant, but a PR would be aprpeciated.
 
 - [pyston:0.4](https://github.com/zoidbergwill/docker-pyston/blob/master/ubuntu/Dockerfile) __compatible with python-2.7.10__
-<!--- [pyston:0.4-onbuild](https://github.com/zoidbergwill/docker-pyston/blob/master/ubuntu/onbuild/Dockerfile) __compatible with python-2.7.10__-->
 
 Setup:
 ---
