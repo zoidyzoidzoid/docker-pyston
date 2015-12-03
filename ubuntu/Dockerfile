@@ -14,6 +14,7 @@ RUN set -e; \
     ln -s /usr/local/pyston-0.4.0-linux64/pyston /usr/local/bin/; \
     apt-get purge -yq wget; \
     apt-get -yq autoremove; \
-    apt-get autoclean
+    apt-get autoclean; \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 CMD ["pyston"]
