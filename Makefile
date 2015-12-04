@@ -1,12 +1,9 @@
 PYSTON_VERSION = 0.4
 
-all: ubuntu ubuntu_onbuild debian debian_onbuild
+all: debian
 
-ubuntu: ubuntu/Dockerfile
-	docker build -f ubuntu/Dockerfile -t zoidbergwill/pyston:$(PYSTON_VERSION) .
-
-ubuntu_onbuild: ubuntu/onbuild/Dockerfile
-	docker build -f ubuntu/onbuild/Dockerfile -t zoidbergwill/pyston:$(PYSTON_VERSION)-onbuild .
+debian: debian/Dockerfile
+	docker build -f debian/Dockerfile -t zoidbergwill/pyston:$(PYSTON_VERSION) .
 
 clean:
 	-docker rmi zoidbergwill/pyston:$(PYSTON_VERSION) zoidbergwill/pyston:$(PYSTON_VERSION)-onbuild
