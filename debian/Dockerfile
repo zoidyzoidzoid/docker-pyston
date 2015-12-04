@@ -14,7 +14,11 @@ RUN set -e; \
     ln -s /usr/local/pyston-0.4.0-linux64/pyston /usr/local/bin/; \
     rm /tmp/pyston-0.4.0-linux64.tar.gz; \
     apt-get purge -yq wget; \
-    apt-get -yq autoremove; \
-    apt-get autoclean
+    apt-get autoclean -y; \
+    apt-get autoremove -y; \
+    rm -rf /usr/share/locale/*; \
+    rm -rf /var/cache/debconf/*-old; \
+    rm -rf /var/lib/apt/lists/*; \
+    rm -rf /usr/share/doc/*
 
 CMD ["pyston"]
