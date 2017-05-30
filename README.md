@@ -1,3 +1,7 @@
+# DEPRECATED
+
+In favor of `docker run -it pyston/pyston` from the official repo: https://github.com/dropbox/pyston/tree/master/docker
+
 A Docker image for Pyston 0.4
 =============================
 
